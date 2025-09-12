@@ -1,3 +1,50 @@
 body {
   background-color: lightcyan;
 }
+
+h2 {
+  text-align: left;
+}
+
+.content {
+  display: grid;
+  background-color: #FFFAA0;
+  justify-items: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  gap: 8px;
+  padding: 1rem;
+}
+
+.menuCard {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  text-align: left;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.menuCard h2 {
+  grid-col: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: self-end;
+}
+
+.menuCard p {
+  grid-col: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.menuCard div {
+  grid-col: 2 / 3;
+  grid-row: 1 / 3;
+  align-self: center;
+  justify-self: center;
+}
+
+
+.placeholderImage {
+  width: 64px;
+  height: 64px;
+  border: 1px solid black;
+}
