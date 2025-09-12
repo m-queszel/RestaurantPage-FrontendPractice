@@ -1,4 +1,4 @@
 import './styles.css';
-import { greet } from './testing.js';
+import { initializePage } from './initial-page-load.js';
 
-console.log(greeting);
+initializePage();
