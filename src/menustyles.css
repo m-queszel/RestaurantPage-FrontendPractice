@@ -1,15 +1,36 @@
-body {
-  background-color: lightcyan;
-}
+body {}
 
 h2 {
   text-align: left;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 1em
+}
+
+header button {
+  background-color: lightblue;
+  width: 8.5em;
+  height: 2.9em;
+  border: #3654ff 0.2em solid;
+  border-radius: 11px;
+  text-align: center;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #3654ff;
+}
+
 .content {
   display: grid;
-  background-color: #FFFAA0;
+  border: #3654ff 0.2em solid;
   justify-items: center;
+  border-radius: 8px;
   margin-left: 20vw;
   margin-right: 20vw;
   gap: 8px;
@@ -48,17 +69,24 @@ h2 {
   border: 1px solid black;
 }
 
-#first-person-card {
+.contact-container {
   display: grid;
   justify-items: center;
+  gap: 8px;
 }
 
-#second-person-card {
+.contact-card {
   display: grid;
   justify-items: center;
+  border: 1px solid black;
+  border-radius: 0.2em;
+  padding: 1em;
 }
 
-#third-person-card {
-  display: grid;
-  justify-items: center;
+.contact-card h2 {
+  justify-self: left;
+}
+
+.contact-container h1 {
+  text-align: center;
 }
