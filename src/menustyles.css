@@ -42,9 +42,23 @@ h2 {
   justify-self: center;
 }
 
-
 .placeholderImage {
   width: 64px;
   height: 64px;
   border: 1px solid black;
+}
+
+#first-person-card {
+  display: grid;
+  justify-items: center;
+}
+
+#second-person-card {
+  display: grid;
+  justify-items: center;
+}
+
+#third-person-card {
+  display: grid;
+  justify-items: center;
 }
