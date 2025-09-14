@@ -1,4 +1,11 @@
-import './styles.css';
-import { initializePage } from './initial-page-load.js';
+import './menustyles.css';
+import { initializeMenuPage } from './menupage';
+import { initializeHomepage } from './homepage';
+import { buttonController } from './buttonController.js';
 
-initializePage();
+initializeMenuPage();
+buttonController();
+
+
+
+

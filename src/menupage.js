@@ -1,5 +1,5 @@
 
-export function initializePage() {
+export function initializeMenuPage() {
 
   const content = document.querySelector('#content');
   const titleContainer = document.createElement('div');
@@ -9,6 +9,10 @@ export function initializePage() {
 
   const placeholderImage2 = document.createElement('div');
   placeholderImage2.classList.add('placeholderImage');
+
+
+  const placeholderImage3 = document.createElement('div');
+  placeholderImage3.classList.add('placeholderImage');
 
   const menuCard1 = document.createElement('div');
   menuCard1.classList.add('menuCard');
@@ -25,6 +29,13 @@ export function initializePage() {
   menuItem2Desc.textContent = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.";
   menuItem2Title.textContent = "Pickle Pizza";
 
+  const menuCard3 = document.createElement('div');
+  menuCard3.classList.add('menuCard');
+  const menuItem3Desc = document.createElement('p');
+  const menuItem3Title = document.createElement('h2');
+  menuItem3Desc.textContent = "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.";
+  menuItem3Title.textContent = "Mac n' Cheese";
+
   menuCard1.appendChild(menuItem1Title);
   menuCard1.appendChild(menuItem1Desc);
   menuCard1.appendChild(placeholderImage1);
@@ -33,11 +44,16 @@ export function initializePage() {
   menuCard2.appendChild(menuItem2Desc);
   menuCard2.appendChild(placeholderImage2);
 
-  title.textContent = "John Doe's Coffee House";
-  titleContainer.appendChild(title);
+  menuCard3.appendChild(menuItem3Title);
+  menuCard3.appendChild(menuItem3Desc);
+  menuCard3.appendChild(placeholderImage3);
 
+  title.textContent = "Menu";
+  titleContainer.appendChild(title);
   content.appendChild(titleContainer);
   content.appendChild(menuCard1);
   content.appendChild(menuCard2);
+  content.appendChild(menuCard3);
+
 }
 
