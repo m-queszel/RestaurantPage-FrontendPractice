@@ -1,4 +1,13 @@
-body {}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/1764702/pexels-photo-1764702.jpeg');
+  background-size: cover;
+
+}
 
 h2 {
   text-align: left;
@@ -8,7 +17,9 @@ header {
   display: flex;
   justify-content: center;
   gap: 8px;
-  padding: 1em
+  padding: 1em;
+  background-color: #1E2B42;
+  margin-bottom: 1em;
 }
 
 header button {
@@ -35,6 +46,7 @@ header button:hover {
   margin-right: 20vw;
   gap: 8px;
   padding: 1rem;
+  background-color: lightblue;
 }
 
 .menuCard {
